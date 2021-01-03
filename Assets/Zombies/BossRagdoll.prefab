@@ -880,8 +880,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1339225122294027942}
   m_Layer: 0
-  m_Name: skeletonzombie_t_avelange
-  m_TagString: Untagged
+  m_Name: BossRagdoll
+  m_TagString: Ragdoll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

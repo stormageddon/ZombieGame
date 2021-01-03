@@ -122,6 +122,8 @@ public class ZombieController : MonoBehaviour
 
                 break;
             case STATE.DEAD:
+                Destroy(agent);
+                this.GetComponent<Sink>().StartSink();
                 break;
         }
     }
