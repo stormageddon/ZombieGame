@@ -1717,8 +1717,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8182110007186639411}
-  - component: {fileID: 4858005932450810756}
   - component: {fileID: 1186101400}
+  - component: {fileID: 266482310}
+  - component: {fileID: 4858005932450810756}
   - component: {fileID: 1309685573}
   - component: {fileID: 2305323520973248369}
   m_Layer: 8
@@ -1744,6 +1745,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1186101400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176861845160572960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3056bee759716ba41b77f8a8a0c96b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: -927199367670048503, guid: 4e8f05cdfc3814ac9bd04c5baae12e38, type: 3}
+  walkingSpeed: 1
+  runningSpeed: 2.5
+  ragdoll: {fileID: 6340107960182173639, guid: 1f9e6622374ed384f828fe1ddf2a5df4, type: 3}
+  anim: {fileID: 4858005932450810756}
+--- !u!114 &266482310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176861845160572960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3915583cb2baf4686a7662b08e5f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sinkDelay: 10
 --- !u!95 &4858005932450810756
 Animator:
   serializedVersion: 3
@@ -1763,23 +1794,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1186101400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5176861845160572960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3056bee759716ba41b77f8a8a0c96b19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: -927199367670048503, guid: 4e8f05cdfc3814ac9bd04c5baae12e38, type: 3}
-  walkingSpeed: 1
-  runningSpeed: 2.5
-  ragdoll: {fileID: 6340107960182173639, guid: 1f9e6622374ed384f828fe1ddf2a5df4, type: 3}
-  anim: {fileID: 0}
 --- !u!195 &1309685573
 NavMeshAgent:
   m_ObjectHideFlags: 0

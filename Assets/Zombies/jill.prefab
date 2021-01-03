@@ -4422,8 +4422,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5286606572932149362}
-  - component: {fileID: 2986969213742036221}
   - component: {fileID: 1216410268}
+  - component: {fileID: 1324636364}
+  - component: {fileID: 2986969213742036221}
   - component: {fileID: 1747704853}
   - component: {fileID: 7183714198882754371}
   m_Layer: 8
@@ -4449,6 +4450,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1216410268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9153167617879130721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3056bee759716ba41b77f8a8a0c96b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  walkingSpeed: 0.8
+  runningSpeed: 2.1
+  ragdoll: {fileID: 7891874861223576868, guid: 8c180c6ccb55ba74d8cfb9b047e38fab, type: 3}
+  anim: {fileID: 0}
+--- !u!114 &1324636364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9153167617879130721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3915583cb2baf4686a7662b08e5f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sinkDelay: 10
 --- !u!95 &2986969213742036221
 Animator:
   serializedVersion: 3
@@ -4468,23 +4499,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1216410268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9153167617879130721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3056bee759716ba41b77f8a8a0c96b19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  walkingSpeed: 0.8
-  runningSpeed: 2.1
-  ragdoll: {fileID: 7891874861223576868, guid: 8c180c6ccb55ba74d8cfb9b047e38fab, type: 3}
-  anim: {fileID: 0}
 --- !u!195 &1747704853
 NavMeshAgent:
   m_ObjectHideFlags: 0
